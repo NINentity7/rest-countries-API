@@ -1,0 +1,327 @@
+/*=============  font-family: 'Nunito Sans', sans-serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+/*============= variables  */
+:root {
+  --light-text: hsl(200, 15%, 8%);
+  --light-input: hsl(0, 0%, 52%);
+  --light-bg: hsl(0, 0%, 98%);
+  --light-el_dark-text: hsl(0, 0%, 100%);
+  --dark-el: hsl(209, 23%, 22%);
+  --dark-bg: hsl(207, 26%, 17%);
+}
+
+/*============= general */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--light-el_dark-text);
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+/*============= header */
+
+header {
+  background-color: var(--dark-el);
+  display: flex;
+}
+
+.home {
+  display: flex;
+}
+
+nav {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 25px;
+  width: 250px;
+  height: 67px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.search i {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.list {
+  background-color: var(--dark-bg);
+  border-radius: 5px;
+  width: 180px;
+  position: absolute;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fade-in 0.4s;
+}
+
+.btn,
+.btn-back {
+  display: block;
+  background-color: var(--dark-el);
+  color: var(--light-el_dark-text);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 180px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 25px 0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active,
+.btn-back:active {
+  font-size: 13px;
+}
+
+.btn-back i {
+  padding-right: 10px;
+}
+
+ul {
+  background-color: var(--dark-el);
+  width: 180px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+li:active {
+  font-size: 12px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*============= main */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.country {
+  background-color: var(--dark-el);
+  color: var(--light-el_dark-text);
+  display: flex;
+  margin: 40px;
+  width: 300px;
+  height: 380px;
+  border-radius: 8px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.country img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.country a {
+  display: flex;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7,
+.line8,
+.line9,
+.line10,
+.line11 {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+h2,
+h4,
+h5,
+p {
+  padding-left: 15px;
+}
+
+h2 {
+  padding: 25px 0 25px;
+  text-align: center;
+}
+
+/*============= info */
+
+.container-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto 200px;
+}
+
+.country-details {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  display: flex;
+  width: 550px;
+  height: 350px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.country-details img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding-left: 60px;
+}
+
+.info-details .borders,
+.info-details h2 {
+  padding-left: 40px;
+}
+
+.btn-container {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+.btn-borders {
+  display: inline;
+  background-color: var(--dark-el);
+  color: var(--light-el_dark-text);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 25px;
+  margin-right: 15px;
+  padding: 10px 0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-borders:active {
+  font-size: 13px;
+}
+
+.domain {
+  text-transform: lowercase;
+}
+
+/*============= footer */
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  animation: fade-out 0.5s;
+}
+
+footer {
+  background-color: var(--dark-el);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.attribution {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  transition: all 0.8s ease;
+}
+
+.attribution a:hover {
+  color: var(--light-el_dark-text);
+  transition: all 0.8s ease;
+}
